@@ -15,10 +15,12 @@
         <i class="list layout icon"></i>
         <i class="dropdown icon"></i>
         <div class="menu">
+          <a class="{{ isActiveRoute 'Events_Page'}} item" href="{{ pathFor 'Events_Page' }}">Events</a>
+
           <a class="{{ isActiveRoute 'Profile_Page'}} item" href="{{ pathFor 'Profile_Page' }}">My Profile</a>
-          <a class="{{ isActiveRoute 'Events_Page'}} item" href="{{ pathFor 'Sell_Tickets_Page' }}">Events</a>
           <a class="{{ isActiveRoute 'Sell_Tickets_Page'}} item" href="{{ pathFor 'Sell_Tickets_Page' }}">Sell Tickets</a>
           <a class="{{ isActiveRoute 'Buy_Tickets_Page'}} item" href="{{ pathFor 'Buy_Tickets_Page' }}">Buy Tickets</a>
+
         </div>
       </div>
     </div>
