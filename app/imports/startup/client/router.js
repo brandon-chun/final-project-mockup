@@ -8,6 +8,41 @@ FlowRouter.route('/', {
   },
 });
 
+FlowRouter.route('/about', {
+  name: 'About_Us',
+  action() {
+    BlazeLayout.render('App_Body', { main: 'About_Us' });
+  },
+});
+
+FlowRouter.route('/profile', {
+  name: 'Profile_Page',
+  action() {
+    BlazeLayout.render('App_Body', { main: 'Profile_Page' });
+  },
+});
+
+FlowRouter.route('/events', {
+  name: 'Events_Page',
+  action() {
+    BlazeLayout.render('App_Body', { main: 'Events_Page' });
+  },
+});
+
+FlowRouter.route('/buy', {
+  name: 'Buy_Tickets_Page',
+  action() {
+    BlazeLayout.render('App_Body', { main: 'Buy_Tickets_Page' });
+  },
+});
+
+FlowRouter.route('/sell', {
+  name: 'Sell_Tickets_Page',
+  action() {
+    BlazeLayout.render('App_Body', { main: 'Sell_Tikets_Page' });
+  },
+});
+
 FlowRouter.route('/list', {
   name: 'List_Stuff_Page',
   action() {
